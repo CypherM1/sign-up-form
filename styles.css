@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    /* border: solid white; */
+   /* border: solid white; */
 }
 
 @font-face {
@@ -80,14 +80,41 @@ body {
 
 .middleFormArea {
     background-color: #0c005d;
+    padding-bottom: 20px;
     box-shadow: 5px 5px 10px 5px rgba(255, 255, 255, 0.3);
 }
 
-.middleFormArea div {
-    margin-bottom: 10px;
-    width: max-content;
+.middleFormArea p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.4rem;
+}
+
+.inputField {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.middleFormArea div div div {
     display: flex;
     flex-direction: column;
+}
+
+label {
+    font-size: .75em;
+}
+
+input {
+    border-radius: 10px;
+    height: 30px;
+    width: 300px;
+    margin: auto;
+}
+
+.passCheck {
+    color: red;
 }
 
 .bottomFormArea {
