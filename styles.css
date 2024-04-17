@@ -104,16 +104,25 @@ body {
 
 label {
     font-size: .75em;
+    margin-bottom: 5px;
 }
 
 input {
+    border: 0px solid;
     border-radius: 10px;
     height: 30px;
     width: 300px;
     margin: auto;
 }
 
-.passCheck {
+input:focus {
+    border: solid 2px black;
+    background-color: white;
+    outline: none;
+}
+
+#passCheck1, #passCheck2 {
+    margin-top: 5px;
     color: red;
 }
 
