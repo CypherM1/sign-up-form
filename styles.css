@@ -3,13 +3,20 @@
     /* border: solid white; */
 }
 
-html {
-    height: 100vh;
+@font-face {
+    font-family: Orbitron;
+    src: url("./fonts/Orbitron/static/Orbitron-Regular.ttf");
+}
+
+body {
+    margin: 0;
+    padding: 0;
     background-color: black;
     color: white;
 }
 
 .wholeArea {
+    height: 100vh;
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -22,6 +29,7 @@ html {
     background-size: cover;
     height: 100vh;
     width: 40vw;
+    box-shadow: inset -50px 0px 20px -20px rgba(255, 255, 255, 0.1);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,6 +43,7 @@ html {
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
+    align-items: center;
 }
 
 .obeyLogo{
@@ -43,7 +52,13 @@ html {
     height: 100px;
 }
 
+.obey{
+    font-family: Orbitron;
+    font-size: 90px;
+}
+
 .photoCredit {
+    background-color: rgba(0, 0, 0, 0.5);
     margin-top: auto;
     justify-self: end;
     display: flex;
@@ -55,4 +70,46 @@ html {
 
 .mainArea{
     width: 60vw;
+}
+
+.topFormArea {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1.4rem;
+}
+
+.middleFormArea {
+    background-color: #0c005d;
+    box-shadow: 5px 5px 10px 5px rgba(255, 255, 255, 0.3);
+}
+
+.middleFormArea div {
+    margin-bottom: 10px;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.bottomFormArea {
+    margin-left: 20px;
+}
+
+button {
+    margin-top: 35px;
+    border: none;
+    background-color: #f5f5f5;
+    padding: 12px 48px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: black;
+    font-weight: bolder;
+    font-size: 1.1rem;
+  }
+
+a:link {
+    color: #f5f5f5;
+}
+
+a:visited {
+    color: red;
 }
